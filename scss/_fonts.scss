@@ -1,0 +1,29 @@
+$fonts: (
+  (
+    family: "Lora-bold",
+    style: normal,
+    weight: "400",
+    filename: "Lora-bold"
+  ),
+  (
+    family: "Lora-Regular",
+    style: normal,
+    weight: "700",
+    filename: "Lora-Regular"
+  ),
+);
+
+
+@each $font in $fonts {
+  @font-face {
+    font-family: map-get($font, family);
+    src: local("#{map-get($font, filename)}-Regular"),
+         local("#{map-get($font, filename)} Regular"),
+         local("#{map-get($font, filename)}-Bold"),
+         local("#{map-get($font, filename)} Bold"),
+         url("../fonts/#{map-get($font, filename)}_400.woff2"),
+         url("../fonts/#{map-get($font, filename)}_400.woff"),
+         url("../fonts/#{map-get($font, filename)}_700.woff2"),
+         url("../fonts/#{map-get($font, filename)}_700.woff");
+  }
+}  
