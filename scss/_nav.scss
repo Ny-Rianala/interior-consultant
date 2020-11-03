@@ -8,18 +8,13 @@
     &__link {
         text-decoration: none;
         color: white;
+        text-transform: lowercase;
+        font-size: 16px;
+        display: block;
+        margin-top: 32px;
     }
 }
 
-  
-  body > nav > ul a {
-  text-transform: lowercase;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1rem;
-  display: block;
-  padding: 1rem 1rem 1rem 4rem;
-  }
   
   
   body > nav {
@@ -84,14 +79,6 @@
  
   }
   
-  body > nav > ul a {
-  text-transform: lowercase;
-  font-weight: 700;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  display: block;
-  padding: 1rem 1rem 1rem 4rem;
-  }
   
   body > nav .link {
   background-position: 1rem 50%;
@@ -108,30 +95,27 @@
   }
 
   
-  @media (min-width: 1140px) {
-  body > nav {
-    padding: 0;
-    background-color: transparent;
+  @media (min-width: 1000px) {
+   .nav__list {
+    position: absolute;
     top: 0;
-    left: auto;
-    right: 0;
-    bottom: auto;
-    width: auto;
-    box-shadow: none;
-    transform: none;
-    transition: none
-  }
-  
-  body > nav > ul {
+    left: 60%;
+    display: flex;
     flex-direction: row;
-    padding-right: 135px;
-  }
+    align-items: flex-end;
+}
   
-  body > nav > ul a {
-    padding: 1.25rem;
+ .nav__link {
     background-image: none;
     line-height: 1.25rem;
     color: black;
+    font-size: 18px;
+    margin-right: 86px;
+    color: white;
+  }
+  #menu_checkbox { 
+    display: none;
+  }
   }
   
   .link_menu {
@@ -140,7 +124,6 @@
   
   body > nav > ul a {
     text-transform: lowercase;
-  }
   }
 
  

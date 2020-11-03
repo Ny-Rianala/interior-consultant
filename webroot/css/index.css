@@ -41,15 +41,11 @@ button {
 
 .nav__link {
   text-decoration: none;
-  color: white; }
-
-body > nav > ul a {
+  color: white;
   text-transform: lowercase;
-  font-weight: 700;
   font-size: 16px;
-  line-height: 1rem;
   display: block;
-  padding: 1rem 1rem 1rem 4rem; }
+  margin-top: 32px; }
 
 body > nav {
   background-color: #f8f8f8;
@@ -104,14 +100,6 @@ body > nav > h2 > label {
 body > nav > ul {
   list-style: none; }
 
-body > nav > ul a {
-  text-transform: lowercase;
-  font-weight: 700;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  display: block;
-  padding: 1rem 1rem 1rem 4rem; }
-
 body > nav .link {
   background-position: 1rem 50%; }
 
@@ -123,27 +111,39 @@ body > nav > ul a:hover {
   left: 90%;
   top: 5%; }
 
-@media (min-width: 1140px) {
-  body > nav {
-    padding: 0;
-    background-color: transparent;
+@media (min-width: 1000px) {
+  .nav__list {
+    position: absolute;
     top: 0;
-    left: auto;
-    right: 0;
-    bottom: auto;
-    width: auto;
-    box-shadow: none;
-    transform: none;
-    transition: none; }
-  body > nav > ul {
+    left: 60%;
+    display: flex;
     flex-direction: row;
-    padding-right: 135px; }
-  body > nav > ul a {
-    padding: 1.25rem;
+    align-items: flex-end; }
+  .nav__link {
     background-image: none;
     line-height: 1.25rem;
-    color: black; }
-  .link_menu {
-    display: none; }
-  body > nav > ul a {
-    text-transform: lowercase; } }
+    color: black;
+    font-size: 18px;
+    margin-right: 86px;
+    color: white; }
+  #menu_checkbox {
+    display: none; } }
+
+.link_menu {
+  display: none; }
+
+body > nav > ul a {
+  text-transform: lowercase; }
+
+@media (min-width: 1000px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 221px; }
+  .main__image {
+    margin-left: 86px; }
+  .main__article {
+    margin-left: 77px; }
+  .heading__button {
+    margin-left: 77px;
+    margin-top: 42px; } }
