@@ -15,7 +15,9 @@ html {
 body {
   margin: 0;
   margin-left: 12px;
-  margin-right: 13px; }
+  margin-right: 13px;
+  background: #181719;
+  color: white; }
 
 span {
   visibility: hidden; }
@@ -38,34 +40,36 @@ button {
   display: inline-block; }
 
 .nav__link {
-  text-decoration: none; }
-
-.nav_menu {
-  position: absolute;
-  top: 6%;
-  left: 90%; }
+  text-decoration: none;
+  color: white; }
 
 body > nav > ul a {
   text-transform: lowercase;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 16px;
   line-height: 1rem;
   display: block;
   padding: 1rem 1rem 1rem 4rem; }
 
 body > nav {
   background-color: #f8f8f8;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
   bottom: 20px;
   width: 250px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   transform: translateX(-110%); }
 
-body > [type="checkbox"]:checked ~ nav {
-  transform: translateX(0); }
+body > [type="checkbox"]:checked ~ div > nav > .nav__list {
+  transform: translateX(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 142px;
+  margin-right: 141px; }
 
 body > [type="checkbox"]:checked ~ header label {
   position: absolute;
@@ -74,9 +78,9 @@ body > [type="checkbox"]:checked ~ header label {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
+  height: 120%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.25); }
+  background: black; }
 
 body > [type="checkbox"]:checked ~ main {
   z-index: 1; }
@@ -98,14 +102,10 @@ body > nav > h2 > label {
   background-repeat: no-repeat; }
 
 body > nav > ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column; }
+  list-style: none; }
 
 body > nav > ul a {
   text-transform: lowercase;
-  text-decoration: none;
-  opacity: 0.5;
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -117,6 +117,11 @@ body > nav .link {
 
 body > nav > ul a:hover {
   opacity: 1; }
+
+#menu_checkbox {
+  position: absolute;
+  left: 90%;
+  top: 5%; }
 
 @media (min-width: 1140px) {
   body > nav {
@@ -136,7 +141,8 @@ body > nav > ul a:hover {
   body > nav > ul a {
     padding: 1.25rem;
     background-image: none;
-    line-height: 1.25rem; }
+    line-height: 1.25rem;
+    color: black; }
   .link_menu {
     display: none; }
   body > nav > ul a {
