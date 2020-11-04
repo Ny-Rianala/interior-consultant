@@ -185,3 +185,11 @@ body > nav > ul a {
       margin-left: 97px; }
     .user__list {
       margin-left: 75px; } }
+
+footer {
+  margin-top: 59px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 75px;
+  color: #A9A9A9; }
