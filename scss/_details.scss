@@ -1,13 +1,15 @@
 .user {
     background-color: #181719;
     box-shadow: 5px 5px 5px black;
-    padding-left:19px;
-    padding-right: 71px;
-    padding-top: 16px;
-    padding-bottom: 25px;
+    padding-left: 19px;
+    padding-right: 97px;
     position: absolute;
     top: 70%;
     left: 8%;
+    margin-right: 26px;
+    margin-top: 60px;
+    left: 10%;
+    
     &__list {
         list-style: none;
         margin-left: 2rem;
@@ -34,7 +36,7 @@
     position: absolute;
     top: 120%;
     left: 57%;
-    padding-top: 23px;
+    margin-right: 60px;
     &__posted-date {
         font-size: 24px;
         margin-top: 30px;

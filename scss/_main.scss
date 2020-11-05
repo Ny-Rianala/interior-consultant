@@ -1,6 +1,16 @@
 .main__image {
     margin-top: 25px;
 }
+
+.main__heading {
+    font-size: 36px;
+}
+
+.main__paragraph {
+    font-size: 14px;
+    color: grey;
+}
+
 a {
     color: white;
     list-style: none;
@@ -35,7 +45,7 @@ a {
     }.arrow--svg {
         position: absolute;
         left: 12%;
-        top: 87%; 
+        top: 97%; 
     }
 
 }

@@ -147,6 +147,13 @@ body > nav > ul a:hover {
 .main__image {
   margin-top: 25px; }
 
+.main__heading {
+  font-size: 36px; }
+
+.main__paragraph {
+  font-size: 14px;
+  color: grey; }
+
 a {
   color: white;
   list-style: none;
@@ -177,18 +184,19 @@ a {
   .arrow--svg {
     position: absolute;
     left: 12%;
-    top: 87%; } }
+    top: 97%; } }
 
 .user {
   background-color: #181719;
   box-shadow: 5px 5px 5px black;
   padding-left: 19px;
-  padding-right: 71px;
-  padding-top: 16px;
-  padding-bottom: 25px;
+  padding-right: 97px;
   position: absolute;
   top: 70%;
-  left: 8%; }
+  left: 8%;
+  margin-right: 26px;
+  margin-top: 60px;
+  left: 10%; }
   .user__list {
     list-style: none;
     margin-left: 2rem;
@@ -212,7 +220,7 @@ a {
     position: absolute;
     top: 120%;
     left: 57%;
-    padding-top: 23px; }
+    margin-right: 60px; }
     .user__posted-date {
       font-size: 24px;
       margin-top: 30px;
@@ -227,4 +235,5 @@ a {
   align-items: center;
   margin-left: 75px;
   color: #A9A9A9;
+  margin-top: 50px;
   margin-bottom: 46px; }
