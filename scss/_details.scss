@@ -1,5 +1,6 @@
 .user {
     background-color: #181719;
+    box-shadow: 5px 5px 5px black;
     padding-left:19px;
     padding-right: 71px;
     padding-top: 16px;
@@ -32,7 +33,7 @@
     .user {
     position: absolute;
     top: 120%;
-    left: 60%;
+    left: 57%;
     padding-top: 23px;
     &__posted-date {
         font-size: 24px;

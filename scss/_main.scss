@@ -1,3 +1,20 @@
+.main__image {
+    margin-top: 25px;
+}
+a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.arrow--svg {
+    position: absolute;
+    left: 26%;
+    top: 39%;
+    fill: currentColor;
+}
+
+
 @media(min-width:1000px) {
     .main {
         display: flex;
@@ -7,9 +24,20 @@
         margin-left: 86px;
     }.main__article {
         margin-left: 77px;
+
     }.heading__button {
         margin-left: 77px;
         margin-top: 42px;
+    }.main__paragraph {
+        font-size: 24px;
+        margin-right: 158px;
+        margin-top: 40px;
+    }.arrow--svg {
+        position: absolute;
+        left: 12%;
+        top: 87%; 
     }
 
 }
+
+

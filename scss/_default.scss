@@ -22,3 +22,11 @@ span {
 img {
     width: 100%;
 }
+
+
+
+@media(min-width:1000px) {
+    body {
+        margin-right: 44px;
+    }
+}
